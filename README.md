@@ -4,6 +4,9 @@
 
 With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup. From Alphabet Soup’s business team, Beks received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
 
+Dataset includes investments in more than 34,000 organizations, including a binary column stating whether or not the money was used effectively. After cleaning the dataset and using sklearn's OneHotEncoder() to standardize the dataset, we're setting the outcome column as the target, with the remaining columns set as features to split the data into train and testing data. We then use sklearn's StandardScaler() and TensorFlow to determine accuracy using different nodes and activation functions.
+
+
 
 ## Data Preprocessing
 
@@ -59,4 +62,4 @@ With your knowledge of machine learning and neural networks, you’ll use the fe
 
 ![68%](https://user-images.githubusercontent.com/49954261/157193081-a7ed66cb-2108-4272-a9fe-fe63fab6ff30.png)
 
-**Our main model performed at almost 70%. After multiple attempts we were unable to make any improvements!**
+**Our main model performed at almost 70%. After multiple attempts- using different cut off points- ex: <200 or <580, various random states, removing an extra column, experimenting with 2 layers or 3 layers(neither improved but decreased the score)- various activations; relu, sigmoid, softmax, random-states=1-42- we were unable to make any significant improvements!**
